@@ -59,7 +59,7 @@
             <td><input type="text" class="form-control" id="valor_unitario" name="valor_unitario[]" onblur="calcular()"></td>
             <!-- todos os inputs com style="display: none; são para uso nos calculos-->
             <td>
-              <input style="display: none;" type="text" class="form-control soma" id="valor_total" name="valor_total[]" onblur="calcular()">
+              <input  style="display: none;" type="text" class="form-control soma" id="valor_total" name="valor_total[]" onblur="calcular()" readonly>
               <input type="text" class="form-control somaS" id="valor_totalS">
             </td>
           </tr>
@@ -117,7 +117,7 @@
           cols += '<td><input type="text" class="form-control" id="quantidade' + i + '" name="quantidade[]"></td>';
           cols += '<td><input type="text" class="form-control" id="descricao" name="descricao[]"></td>';
           cols += '<td><input type="text" class="form-control" id="valor_unitario' + i + '" name="valor_unitario[]"></td>';
-          cols += '<td><input style="display: none;" type="text" class="form-control soma" id="valor_total' + i + '" name="valor_total[]" onblur="calcular()">';
+          cols += '<td><input disabled style="display: none;" type="text" class="form-control soma" id="valor_total' + i + '" name="valor_total[]" onblur="calcular()" readonly>';
           cols += '<input type="text" class="form-control somaS" id="valor_totalS' + i + '"></td>';
           cols += '<td><button type="button" name="remove" id="' + i + '" class="btn btn-danger deleteLinha">X</button> </td>';
           newRow.append(cols);
