@@ -56,7 +56,11 @@ class OrcamentoModel extends CI_Model {
 
     }
 
-        
+    public function listar()
+    {      
+      
 
-    
+
+
+    }
 }
